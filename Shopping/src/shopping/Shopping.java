@@ -115,6 +115,7 @@ public class Shopping {
                 + "*1 - Show my bag                                                  *\n"
                 + "*2 - Remove a product from my bag                                 *\n"       
                 + "*3 - Checkout                                                     *\n"
+                + "*4 - exit                                                         *\n"
                 + "*******************************************************************\n");
         //The menu2 variable is a string containing the second menu displayed to the user.
         String menu2 = new String(
@@ -237,6 +238,9 @@ public class Shopping {
                 default:
                     System.out.println("Error. Invalid option");//if the user type a number invaliable 
                     break;
+                case 4: //exit the program without buy 
+                    System.exit(0);
+                    
             }
         } while (option != 3);
 
