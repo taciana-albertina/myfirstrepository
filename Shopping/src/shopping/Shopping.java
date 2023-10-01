@@ -57,24 +57,24 @@ public class Shopping {
         /*creating a list called fresh_food to store the products in the "fresh food" section of the supermarket. 
         The list is of type Product, indicating that it will store objects of the Product class.*/
         ArrayList<Product> fresh_food = new ArrayList<>();
-        fresh_food.add(new Product("fish", (float) 2.99, 1, "healthy", "fresh food"));
-        fresh_food.add(new Product("ice cream", (float) 2.99, 4, "sugar", "fresh food"));
-        fresh_food.add(new Product("ice fruit", (float) 0.99, 500, "no sugar", "fresh food"));
+        fresh_food.add(new Product("fish", (float) 2.99, 1, "healthy", "fresh food", (float) 500.00));
+        fresh_food.add(new Product("ice cream", (float) 2.99, 4, "sugar", "fresh food", (float) 2.00));
+        fresh_food.add(new Product("ice fruit", (float) 0.99, 500, "no sugar", "fresh food", (float) 1.00));
 
         /*creating a list bakery to store the products in the "bakery" section of the supermarket. 
         The list is of type Product, indicating that it will store objects of the Product class.*/
         ArrayList<Product> bakery = new ArrayList<>();
-        bakery.add(new Product("bread", (float) 0.99, 1 / 2, "whole grain", "bakery"));
+        bakery.add(new Product("bread", (float) 0.99, 1 / 2, "whole grain", "bakery", (float) 500.00));
 
         /*creating a list called drinks to store the products in the "drinks" section of the supermarket. 
         The list is of type Product, indicating that it will store objects of the Product class.*/
         ArrayList<Product> drinks = new ArrayList<>();
-        drinks.add(new Product("DietCoke", (float) 1.39, 330, "no sugar", "drink"));
+        drinks.add(new Product("DietCoke", (float) 1.39, 330, "no sugar", "drink", 0));
 
         /*creating a list called frozen_food to store the products in the "frozen food" section of the supermarket. 
         The list is of type Product, indicating that it will store objects of the Product class.*/
         ArrayList<Product> frozen_food = new ArrayList<>();
-        frozen_food.add(new Product("cannelloni", (float) 2.99, 330, "lactose", "frozen food"));
+        frozen_food.add(new Product("cannelloni", (float) 2.99, 330, "lactose", "frozen food", (float) 2.5));
 
         /*Adding the sections to the supermarket
         *Each section contains a list of specific products associated with it. 

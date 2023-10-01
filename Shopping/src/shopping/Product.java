@@ -14,6 +14,7 @@ public class Product extends Items {
     
     String type;
     int qtd;
+    float wieght;
     
     
   /**
@@ -22,7 +23,7 @@ public class Product extends Items {
   * The quantity is set to zero, indicating that initially the product has no defined quantity.
   * 
   */
-    public Product(String name_item, float price, float size, String information, String type) {
+    public Product(String name_item, float price, float size, String information, String type, float wieght) {
         super(name_item, price, size, information);
         this.type = type;
         this.qtd = 0;
